@@ -1,0 +1,52 @@
+*,
+::before,
+::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  margin:0;
+  background: linear-gradient(to right, purple, orange);
+  
+}
+
+#drum-machine {
+  margin: auto auto;
+  margin-top: 15vh;
+  width: 600px;
+  height: 750px;
+  display: grid;
+  justify-content: center;
+  grid-template-columns: repeat(3,1fr);
+  grid-template-rows: repeat(4,1fr);
+  border-radius: 5px;
+  box-shadow: 6px 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+#drum-machine > #display{
+  display: flex;
+  height: 150px;
+  grid-column-start: 1;
+  grid-column-end: 4;
+  border-radius: 5px;
+  border: 2px solid white;
+  justify-content: center;
+  align-items: center;
+  font-size: 4rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  background-color: rgba(255, 255, 255, 0.8);
+}
+
+#drum-machine > button {
+  width: 200px;
+  height: 200px;
+  font-size: 2rem;
+  color: black;
+  border: 1px solid white;
+  background-color: rgba(255, 255, 255, 0.8);
+}
+
+
